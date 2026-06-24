@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Password Generator</h1>
+
+    <div class="output">
+      <input type="text" id="passwordOutput" readonly placeholder="Your password">
+      <button id="copyBtn" title="Copy to clipboard">📋</button>
+    </div>
+    <p id="copyMsg" class="copy-msg"></p>
+
+    <div class="length-control">
+      <label for="lengthSlider">Length: <span id="lengthValue">12</span></label>
+      <input type="range" id="lengthSlider" min="4" max="32" value="12">
+    </div>
+
+    <div class="options">
+      <label><input type="checkbox" id="uppercase" checked> Uppercase (A-Z)</label>
+      <label><input type="checkbox" id="lowercase" checked> Lowercase (a-z)</label>
+      <label><input type="checkbox" id="numbers" checked> Numbers (0-9)</label>
+      <label><input type="checkbox" id="symbols"> Symbols (!@#$...)</label>
+    </div>
+
+    <div class="strength" id="strengthBar">
+      <div class="strength-fill" id="strengthFill"></div>
+    </div>
+    <p id="strengthText" class="strength-text">Strength: -</p>
+
+    <button id="generateBtn" class="generate-btn">Generate Password</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
