@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #134e5e, #71b280);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #134e5e;
+}
+
+.output {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+#passwordOutput {
+  flex: 1;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 2px solid #cfd8dc;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+#copyBtn {
+  border: none;
+  background: #134e5e;
+  color: white;
+  border-radius: 10px;
+  width: 48px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#copyBtn:hover {
+  background: #1d6f86;
+}
+
+.copy-msg {
+  min-height: 18px;
+  color: #2e7d32;
+  font-size: 0.85rem;
+  margin: 0 0 14px;
+}
+
+.length-control {
+  margin-bottom: 16px;
+}
+
+.length-control label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+#lengthSlider {
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.options label {
+  font-size: 0.95rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.strength {
+  height: 8px;
+  border-radius: 4px;
+  background: #e0e0e0;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.strength-fill {
+  height: 100%;
+  width: 0%;
+  background: #e74c3c;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.strength-text {
+  margin: 0 0 18px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 14px;
+  background: #134e5e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.generate-btn:hover {
+  background: #1d6f86;
+}
